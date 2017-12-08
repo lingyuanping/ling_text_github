@@ -1,0 +1,348 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing:border-box;
+    }
+    ul{
+      list-style: none;
+    }
+    .bullup_top{
+        height:800px;
+        width: 100%;
+        background: url("./image/index.png");
+        background-size: cover;
+        position: relative;
+    }
+    .bullup_top_in{
+        width:1000px;
+        height:500px;
+        background: url("./image/tatale.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+    .bullup_top_bar{
+        width: 326px;
+        height: 43px;
+        position:relative;
+        top:30px;
+        left:40px;
+        background: url("./image/douniu.png");
+        background-size: cover;
+    }
+    .bullup_bar{
+        width: 96%;
+        height: 4px;
+        background: #b49756;
+        opacity: 0.3;
+        border-radius: 1px;
+        margin: 50px 2% 20px 2%;
+    }
+    @media all and (max-width:1000px){
+        .bullup_top_in{
+            width: 800px;
+            height: 400px;
+        }
+    }
+    .bullup_btn_baoming{
+        width: 170px;
+        height: 50px;
+        border: 1px solid #b49756;
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        transform: translate(20%,0);
+        box-shadow: 2px 2px 50px 4px #b49756;
+        line-height: 50px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+
+    }
+    .bullup_btn_xiazai{
+        width: 170px;
+        height: 50px;
+        border: 1px solid #b49756;
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        box-shadow: 2px 2px 50px 4px #b49756;
+        transform: translate(-120%,0);
+        line-height: 50px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+    }
+    .bullup_secont{
+        padding: 1px 0 0 0 ;
+        width: 100%;
+        height: 1300px;
+        background: url("./image/jianjie.png");
+        background-size: cover;
+    }
+    .carousel{
+        margin: 200px 0 200px 0;
+        height: 800px;
+        width:100%;
+        background: url("./image/lunbo1.png");
+    }
+    .bullup_liansai{
+        width: 100%;
+        height: 1000px;
+        padding-top:1px;
+        background: url("./image/beijing.png");
+        background-size:cover;
+    }
+    .bullup_liansai_top{
+        width: 100%;
+        height: 50px;
+        margin-top:100px;
+        border-bottom: 1px solid #B49756;
+        text-align: center;
+    }
+    .bullup_liansai_bar{
+        color: #B49756;
+        height: 50px;
+        display: inline-block;
+    }
+    .bullup_liansai_bar li{
+        float: left;
+        line-height:48px;
+        border: 1px solid #b49756;
+        width: 164px;
+        text-align: center;
+    }
+    .bullup_liansai_content{
+        width: 1000px;
+        /*display: inline-block;*/
+        /*background: red;*/
+        height: 650px;
+        margin: auto;
+        font-size: 0px;
+        position: relative;
+        overflow: hidden;
+    }
+    .bullup_liansai_content_box{
+        width: 6000px;
+        height: 200px;
+        /*background: green;*/
+        position: relative;
+        top:0px;
+        left: 0px;
+    }
+    .bullup_liansai_content_one{
+        width: 1000px;
+        height: 200px;
+        /*background: gray;*/
+        display: inline-block;
+    }
+    .bullup_liansai_content_left{
+        font-size: 0px;
+        width:250px;
+        height: 200px;
+        display: inline-block;
+        /*background: pink;*/
+        position:relative;
+    }
+    .bullup_liansai_content_right{
+        width: 750px;
+        height: 200px;
+        display: inline-block;
+        /*background: yellow;*/
+        position: relative;
+    }
+
+    .bullup_liansai_content_ok{
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        left:0;
+    }
+    .font_size_title{
+        padding: 10px 20px 0px 15px;
+        font-weight: 900;
+        color: #fff;
+        font-size: 30px;
+    }
+    .font_size{
+        font-size: 16px;
+        color: #fff;
+        padding: 10px 195px 10px 15px;
+         /*display: inline-block;*/
+         position: relative;
+         top: 0;
+         left:0;
+    }
+    .bullup_liansai_content_left_box{
+        position: absolute;
+        top: 50px;
+        left: 105px;
+    }
+    .current{
+      background: #fff;
+      color: #B49756;
+    }
+    .bullup_news{
+      width: 1200px;
+      height: 80%;
+      margin: 50px auto 0px;
+      /*background: red;*/
+      font-size: 0px;
+      /*opacity: 0.5;*/
+    }
+    .bullup_news_left{
+      width: 40%;
+      height: 100%;
+      padding-top: 100px;
+      /*background: gray;*/
+      /*opacity: 0.5;*/
+      display: inline-block;
+    }
+    .bullup_news_left img{
+      width: 100%;
+      height: 100%;
+      display:inline-block;
+    }
+    .bullup_news_right{
+      width: 60%;
+      height: 100%;
+      display: inline-block;
+      position: relative;
+    }
+    .bullup_news_right_box{
+      width: 100%;
+      height: 100%;
+      /*background: pink;*/
+      position: absolute;
+      top:0px;
+      left: 0px;
+    }
+    .bullup_news_right_bar{
+      width: 600px;
+      height: 45px;
+      padding-top: 1px;
+      margin: 300px 0 0 20px;
+      background: url("./image/23123.png");
+      /*background-size: cover;*/
+    }
+    .bullup_news_right_bar ul{
+        width: 98%;
+        height: 80%;
+        margin: 5px 0 0 6px;
+        /*background: red;*/
+        list-style: none;
+    }
+    .bullup_news_right_bar ul li{
+      font-size: 16px;
+      float: left;
+      width: 20%;
+      height: 100%;
+      background: url("./image/btn_tab_602d6d2.png") no-repeat;
+      /*background-size: cover;*/
+      text-align: center;
+      line-height: 39.19px;
+    }
+    .bullup_news_right_bar ul li:hover{
+      background: url("./image/btn_tab_h_7455da4.png");
+    }
+    .bullup_news_list_box{
+       font-size: 16px;
+       color: #e0b07d;
+       text-align: center;
+    }
+    .bullup_news_list_box p{
+      margin: 30px 0 0 10px;
+      font-weight: 900;
+      font-size: 20px;
+      width: 600px;
+    }
+    p.bullup_news_list{
+      margin: 8px 0 0 10px;
+      padding:0 10px 0 35px;
+      /*background: lightgray;*/
+      text-align: left;
+    }
+    .bullup_news_list span{
+      font-size: 14px;
+      font-weight: 200;
+    }
+    .bullup_news_new{
+      background: #A69990;
+      color: #211403;
+      display: inline-block;
+      width: 38px;
+      text-align: center;
+    }
+    .bullup_news_center{
+      display:inline-block;
+      padding-left: 10px;
+      width: 450px;
+      /*background: red;*/
+    }
+    .bullup_news_time{
+      color:#fff;
+    }
+    .bullup-map{
+       width: 100%;
+       height: 1000px;
+       background: #000;
+       padding-top: 1px;
+       position:relative;
+    }
+    .bullup_map_box{
+       width: 1200px;
+       margin: 80px auto 0;
+       height: 537px;
+       position: relative;
+    }
+    .bullup_map_box img{
+      width: 100%;
+      height: 100%;
+    }
+    .bullup_map_canada{
+      width: 40px;
+      height: 40px;
+      border: 8px solid #d6b247;
+      border-radius: 100px;
+      position: absolute;
+      top: 120px;
+      left:140px;
+    }
+    .bullup_map_america{
+      width: 40px;
+      height: 40px;
+      border: 8px solid #d6b247;
+      border-radius: 100px;
+      position: absolute;
+      top: 180px;
+      left:220px;
+    }
+    .bullup_map_china{
+      width: 40px;
+      height: 40px;
+      border: 8px solid #d6b247;
+      border-radius: 100px;
+      position: absolute;
+      top: 140px;
+      left:950px;
+    }
+    .footer_ied{
+      height: 80px;
+      width: 100%;
+      margin-bottom: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      text-align: center;
+    }
+    .footer_ied_heng{
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      margin-bottom: 15px;
+    }
+    .footer_ied p{
+      font-size: 14px;
+      color:#b49756;
+    }
