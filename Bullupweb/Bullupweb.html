@@ -24,24 +24,52 @@
         font-size: 16px;
         position: fixed;
         z-index: 10;
-        right: 0px;
+        right: 45px;
+        width: 100px;
+        height: 100%;
+        text-align: center;
+      }
+      .anchor ul{
+        height: 100%;
       }
       .anchor ul li{
-         height: 20px;
-         padding: 80px 50px 0 0;
+         height: 10%;
+         /*padding: 0 50px 80px 0;*/
          color: #8e8c89;
          font-size: 14px;
+      }
+      .anchor ul li img{
+        width: 50px;
+        height: 50px;
+      }
+      .anchor .backtotop{
+        width: 80px;
+        height: 50px;
+        border: 1px solid yellow;
+      }
+      .anchor .backtotop1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+      }
+      .anchor .backtotop1 img{
+        width: 100px;
+        height: 100px;
       }
     </style>
 </head>
 <body>
   <div class="anchor">
      <ul>
-       <li>官网首页</li>
+       <li><span></span></li>        
+       <li><span>官网首页</span></li>
        <li>斗牛介绍</li>
        <li>赏金联赛</li>
        <li>新闻动态</li>
        <li>公司发展</li>
+       <li class="backtotop"><img src="./image/fanhui.png" alt=""></li>
+       <li class="backtotop1"><img src="./image/erwekma.jpg" alt=""></li>
      </ul>
   </div>
     <div class="bullup_top">
@@ -263,7 +291,38 @@
     var move1 = document.getElementById("move");
     btn2.click(function(){
       move(move1,-1000);
-    })
+    });
+
+
+    function getScroll(){
+      if (window.pageXOffset){
+         console.log("11");
+        return {
+          top: window.pageYOffset,
+          left: window.pageXOffset
+        }
+      } else if (document.body.scrollTop){
+        // console.log("22");
+        return {
+          top: document.body.scrollTop,
+          left: document.body.scrollLeft
+        }
+      } else {
+        // console.log("33");
+        return {
+          top: document.documentElement.scrollTop,
+          left: document.documentElement.scrollLeft
+        }
+    }
+}
+
+window.onscroll=function(event){
+    var scroll = getScroll();
+    console.log(scroll.top);
+}
+
+  console.log(getScroll());
+
     </script>
 
 </body>
