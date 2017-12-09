@@ -62,13 +62,16 @@
         width: 100px;
         height: 100px;
       }
+      .anchor .action_one{
+        color: #b49756;
+      }
     </style>
 </head>
 <body>
   <div class="anchor">
      <ul>
        <li><span></span></li>
-       <li><span>官网首页</span></li>
+       <li class="action_one"><span>官网首页</span></li>
        <li>斗牛介绍</li>
        <li>赏金联赛</li>
        <li>新闻动态</li>
@@ -267,6 +270,7 @@
         <p>斗牛电竞 版权所有</p>
       </div>
     </div>
+    <audio src="./"></audio>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
     function move(obj, target){
@@ -299,25 +303,27 @@
     });
 
 
-    //获取到顶部的高度，兼容各版本浏览器
-    function getScroll(){
-      if (window.pageXOffset){
-        return {
-          top: window.pageYOffset,
-          left: window.pageXOffset
-        }
-      } else if (document.body.scrollTop){
-        return {
-          top: document.body.scrollTop,
-          left: document.body.scrollLeft
-        }
-      } else {
-        return {
-          top: document.documentElement.scrollTop,
-          left: document.documentElement.scrollLeft
-        }
-    }
+//获取到顶部的高度，兼容各版本浏览器
+function getScroll(){
+    if (window.pageXOffset){
+      return {
+        top: window.pageYOffset,
+        left: window.pageXOffset
+      }
+    } else if (document.body.scrollTop){
+      return {
+        top: document.body.scrollTop,
+        left: document.body.scrollLeft
+      }
+    } else {
+      return {
+        top: document.documentElement.scrollTop,
+        left: document.documentElement.scrollLeft
+      }
+  }
 }
+
+
 
 var current;
 window.onscroll=function(event){
@@ -330,22 +336,25 @@ window.onscroll=function(event){
 }
 
 
-var li = $(".anchor ul").children();
+var lii = $(".anchor ul").children();
+var arr =[1100,2300,3400,4300];
 
-    for (var i = 0; i < li.length; i++){
+for (var i = 2; i < lii.length-2; i++){
+  lii.eq(i).on("click", i, function(event){
+      $(this).addClass("action_one").siblings('li').removeClass('action_one');
+      var target = arr[event.data-2];
+      move11(target);
+  });
+}
 
-      l1s.eq(i).css("backgroundColor", colors[i]);
-      l2s.eq(i).css("backgroundColor", colors[i]);
-
-      l2s.eq(i).on("click", i, function(event){
-          //得到当前颜色的屏幕距离body最顶部的距离
-          var target = event.data * sHeight;
-          move(target);
-      });
-  }
+$(".backtotop").on("click",function(event){
+  move11(0);
+  lii.eq(1).addClass("action_one").siblings('li').removeClass('action_one');
+});
 
   //target参数表示的是当前的盒子距离父盒子顶部的距离，offsetTop
-  function move(target){
+var timer = null;
+function move11(target){
       clearInterval(timer);
       timer = setInterval(function(){
           var speed = (target - current ) / 10;
@@ -355,7 +364,6 @@ var li = $(".anchor ul").children();
 
           //用于进行屏幕的滚动
           window.scrollTo(0, current);
-
           if ( target == current ) {
               clearInterval(timer);
           }
