@@ -59,12 +59,24 @@
         p.font_size{
             padding-right: 275px;
         }
+        div.bullup_map_box img{
+
+        }
+        div.bullup_map_box{
+          width: 100%;
+          height: 400px;
+        }
     }
     @media all and (max-width:750px){
         .bullup_top_in{
             width: 500px;
             height: 250px;
         }
+    }
+    @media all and (min-width:1000px) and (max-width:1200px){
+       div.bullup_map_box{
+         width: 1000px;
+       }
     }
     .bullup_btn_baoming{
         width: 170px;
@@ -338,29 +350,39 @@
     .bullup_map_canada{
       width: 40px;
       height: 40px;
-      border: 8px solid #d6b247;
-      border-radius: 100px;
+      border: 6px solid #d6b247;
+      border-radius: 20px;
       position: absolute;
-      top: 120px;
-      left:140px;
+      top: 22.34%;
+      left:11.66%;
+      background: rgba(26, 26, 26, 0.85);
     }
     .bullup_map_america{
       width: 40px;
       height: 40px;
-      border: 8px solid #d6b247;
-      border-radius: 100px;
+      border: 5px solid #d6b247;
+      border-radius: 20px;
       position: absolute;
-      top: 180px;
-      left:220px;
+      top: 33.5%;
+      left:18.33%;
+      padding: 0px;
+      margin: 0px;
+      background: rgba(26, 26, 26, 0.85);
+      transition: padding 0.25s ease-in-out 0.25s, margin 0.25s ease-in-out 0.25s,width 0.25s ease-in-out 0.25s,height 0.25s ease-in-out 0.25s;
+    }
+    .bullup_map_america:hover{
+      margin: -100px 0 0 -100px;
+      padding: 100px;
     }
     .bullup_map_china{
       width: 40px;
       height: 40px;
-      border: 8px solid #d6b247;
-      border-radius: 100px;
+      border: 6px solid #d6b247;
+      border-radius: 20px;
       position: absolute;
-      top: 140px;
-      left:950px;
+      top: 26%;
+      left:80%;
+      background: rgba(26, 26, 26, 0.85);
     }
     .footer_ied{
       height: 80px;
