@@ -39,10 +39,16 @@
         border-radius: 1px;
         margin: 50px 2% 20px 2%;
     }
-    @media all and (max-width:1000px){
+    @media all and (min-width:750px) and (max-width:1000px){
         .bullup_top_in{
-            width: 800px;
+            width: 750px;
             height: 400px;
+        }
+    }
+    @media all and (max-width:750px){
+        .bullup_top_in{
+            width: 500px;
+            height: 250px;
         }
     }
     .bullup_btn_baoming{
