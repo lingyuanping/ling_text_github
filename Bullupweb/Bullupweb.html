@@ -17,6 +17,7 @@
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
+    <link rel="Shortcut Icon" href="./image/favicon.png" type="image/x-icon">
     <link rel='stylesheet' href="./Bullupwed.css" type='text/css' />
     <title>斗牛电竞</title>
     <style media="screen">
@@ -86,6 +87,10 @@
         <div class="bullup_top_in"></div>
         <div class="bullup_btn_baoming">赛事报名</div>
         <div class="bullup_btn_xiazai">下载客户端</div>
+        <div class="bullup_btn_bgmusic" id="bullup_bg_music">关闭背景音乐</div>
+        <audio autoplay  loop id="audio">
+          <source src="./music/Two Steps From Hell - Victory (Instrumental).mp3" type="">
+        </audio>
     </div>
 
     <!-- 斗牛介绍 -->
@@ -270,7 +275,6 @@
         <p>斗牛电竞 版权所有</p>
       </div>
     </div>
-    <!-- <audio src="./"></audio> -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
       function move(obj, target){
@@ -351,17 +355,14 @@
         move11(0);
         lii.eq(1).addClass("action_one").siblings('li').removeClass('action_one');
       });
-
-        //target参数表示的是当前的盒子距离父盒子顶部的距离，offsetTop
-          var timer = null;
+      //target参数表示的是当前的盒子距离父盒子顶部的距离，offsetTop
+      var timer = null;
       function move11(target){
             clearInterval(timer);
             timer = setInterval(function(){
                 var speed = (target - current ) / 10;
                 speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-
                 current += speed;
-
                 //用于进行屏幕的滚动
                 window.scrollTo(0, current);
                 if ( target == current ) {
@@ -369,7 +370,17 @@
                 }
             }, 30);
         }
+        //点击播放音乐,暂停音乐
+        var music = document.getElementById("audio");
+        $("#bullup_bg_music").click(function(event){
+            if($(this).text()=="关闭背景音乐"){
+              music.pause();
+              $(this).text("开启背景音乐");
+            }else{
+              music.play();
+              $(this).text("关闭背景音乐");
+            }         
+        });
     </script>
-
 </body>
 </html>

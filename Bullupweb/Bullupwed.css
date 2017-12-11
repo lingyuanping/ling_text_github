@@ -44,6 +44,21 @@
             width: 750px;
             height: 400px;
         }
+        .bullup_liansai_top .bullup_liansai_bar li{
+            width: 120px;
+        }
+        div.bullup_liansai_content_left_box{
+            left: 60px;
+        }
+        div.bullup_liansai_content_ok{
+            left: -55px;
+        }
+        div.bullup_liansai_content{
+            width: 750px;
+        }
+        p.font_size{
+            padding-right: 275px;
+        }
     }
     @media all and (max-width:750px){
         .bullup_top_in{
@@ -76,6 +91,20 @@
         box-shadow: 2px 2px 50px 4px #b49756;
         transform: translate(-120%,0);
         line-height: 50px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+    }
+    .bullup_btn_bgmusic{
+        width: 130px;
+        height: 30px;
+        border: 1px solid #b49756;
+        font-size: 14px;
+        position: absolute;
+        top: 140px;
+        left: 120px;
+        box-shadow: 2px 2px 50px 4px #b49756;
+        line-height: 30px;
         text-align: center;
         color:#b49756;
         border-radius: 10px;
