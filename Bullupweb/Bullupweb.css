@@ -66,16 +66,77 @@
           width: 100%;
           height: 400px;
         }
+        div.bullup_news_left{
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            opacity: 0.4;
+        }
+        div.bullup_news_right{
+             width: 100%;
+        }
+        div.bullup_news_right_box{
+            width: 650px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+        div.bullup_news{
+            width: 100%
+        }
     }
     @media all and (max-width:750px){
         .bullup_top_in{
             width: 500px;
             height: 250px;
         }
+        div.bullup_liansai_top{
+            width: 20%;
+            height: 100%;
+            margin-top: 64px;
+            border-bottom: 0px solid #B49756;
+            text-align: left;
+            position: absolute;
+            left: 10px;
+            z-index: 1;
+        }
+        .bullup_liansai_bar{
+            width: 100%;
+        }
+        ul.bullup_liansai_bar li{
+            width: 100%
+        }
+        div.bullup_liansai_content{
+            width: 100%;
+        }
+        div.bullup_liansai_content_box{
+            width: 600%;
+        }
+        div.bullup_liansai_content_one{
+            width: 16.6%;
+        }
+        div.bullup_liansai_content_left{
+            display:none;
+        }
+        div.bullup_liansai_content_right{
+            width: 80%;
+            left:22%;
+        }
+        .bullup_liansai_content_ok .font_size{
+         padding: 10px 10px 10px 15px;
+     }
     }
     @media all and (min-width:1000px) and (max-width:1200px){
        div.bullup_map_box{
          width: 1000px;
+       }
+       div.bullup_news{
+        width: 1000px;
+       }
+       div.bullup_news_left{
+           width: 35%;
+       }
+       div.bullup_news_right{
+           width: 65%;
        }
     }
     .bullup_btn_baoming{
@@ -164,7 +225,7 @@
         width: 1000px;
         /*display: inline-block;*/
         /*background: red;*/
-        height: 650px;
+        height: 750px;
         margin: auto;
         font-size: 0px;
         position: relative;
@@ -217,9 +278,9 @@
         color: #fff;
         padding: 10px 195px 10px 15px;
          /*display: inline-block;*/
-         position: relative;
-         top: 0;
-         left:0;
+        position: relative;
+        top: 0;
+        left:0;
     }
     .bullup_liansai_content_left_box{
         position: absolute;
@@ -236,6 +297,7 @@
       margin: 50px auto 0px;
       /*background: red;*/
       font-size: 0px;
+      position: relative;
       /*opacity: 0.5;*/
     }
     .bullup_news_left{

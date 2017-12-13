@@ -16,8 +16,11 @@ var bar_ul = $(".bullup_liansai_bar");
 var bar_li = bar_ul.children();
 bar_li.eq(0).addClass("current");
 
+//移动联赛的模块
 for (var i = 0; i < bar_li.length; i++){
     bar_li.eq(i).on("click", i, function(event){
+        console.log($("#move").css("width"));
+        console.log(window.innerWidth);
         $(this).addClass("current").siblings('li').removeClass("current");
         move(move1, -event.data * 1000);
     });
