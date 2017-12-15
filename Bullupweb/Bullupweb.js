@@ -21,8 +21,15 @@ for (var i = 0; i < bar_li.length; i++){
     bar_li.eq(i).on("click", i, function(event){
         console.log($("#move").css("width"));
         console.log(window.innerWidth);
-        $(this).addClass("current").siblings('li').removeClass("current");
-        move(move1, -event.data * 1000);
+        var window_width = window.innerWidth;
+        if(window_width >= 750){
+          $(this).addClass("current").siblings('li').removeClass("current");
+          move(move1, -event.data * 1000);
+        }else {
+           $(this).addClass("current").siblings('li').removeClass("current");
+           move(move1, -event.data * (window_width-17));
+        }
+
     });
 }
 var move1 = document.getElementById("move");
