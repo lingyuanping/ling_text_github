@@ -83,11 +83,42 @@
         div.bullup_news{
             width: 100%
         }
+        div.roundabout_box{
+            display: none;
+          }
+          div.box {
+              display:block;
+          }
     }
     @media all and (max-width:750px){
+        div.roundabout_box{
+            display: none;
+          }
+          div.box {
+              display:block;
+          }
         .bullup_top_in{
-            width: 500px;
-            height: 250px;
+            width: 100%;
+            height: 400px;
+            background-size: contain;
+        }
+        div.bullup_btn_bgmusic{
+            top: 115px;
+            left: 15px;
+        }
+        div.bullup_btn_xiazai{
+            width: 150px;
+            top: 450px;
+        }
+        div.bullup_btn_baoming{
+            width: 150px;
+            top: 450px;
+        }
+        div.box{
+            height: 350px;
+        }
+        ul.image li a img{
+            height: 350px;
         }
         div.bullup_liansai_top{
             width: 20%;
@@ -196,6 +227,12 @@
     }
 
     @media all and (min-width:1000px) and (max-width:1200px){
+        div.roundabout_box{
+          display: block;
+        }
+        div.box {
+            display:none;
+        }
        div.bullup_map_box{
          width: 1000px;
        }
@@ -258,6 +295,7 @@
         height: 1300px;
         background: url("./image/jianjie.png");
         background-size: cover;
+        overflow: hidden;
     }
     .carousel{
         margin: 200px 0 200px 0;
@@ -295,7 +333,7 @@
         width: 1000px;
         /*display: inline-block;*/
         /*background: red;*/
-        height: 750px;
+        height: 1140px;
         margin: auto;
         font-size: 0px;
         position: relative;
@@ -487,6 +525,8 @@
       position: absolute;
       top: 22.34%;
       left:11.66%;
+      transform: translate(-50%,-50%);
+      transition: all 1s linear;
       background: rgba(26, 26, 26, 0.85);
     }
     .bullup_map_america{
@@ -500,11 +540,12 @@
       padding: 0px;
       margin: 0px;
       background: rgba(26, 26, 26, 0.85);
-      transition: padding 0.25s ease-in-out 0.25s, margin 0.25s ease-in-out 0.25s,width 0.25s ease-in-out 0.25s,height 0.25s ease-in-out 0.25s;
+      transform: translate(-50%,-50%);
+      transition: all 1s linear;
     }
-    .bullup_map_america:hover{
-      margin: -100px 0 0 -100px;
-      padding: 100px;
+    .bullup_map_america:hover,.bullup_map_china:hover,.bullup_map_canada:hover{
+        width: 240px;
+        height: 240px;
     }
     .bullup_map_china{
       width: 40px;
@@ -514,6 +555,8 @@
       position: absolute;
       top: 26%;
       left:80%;
+      transform: translate(-50%,-50%);
+      transition: all 1s linear;
       background: rgba(26, 26, 26, 0.85);
     }
     .footer_ied{
@@ -534,4 +577,50 @@
     .footer_ied p{
       font-size: 14px;
       color:#b49756;
+    }
+    .box {
+        display:none;
+        width: 100%;
+        height: 460px;
+        margin: 200px auto;
+        overflow: hidden;
+        position: relative;
+    }
+    ul {
+        list-style: none;
+    }
+    .image {
+        height: 460px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .image li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .image li a img{
+        width: 100%;
+        height: 100%;
+    }
+    .point {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    .point span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        background: gray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .point span.current {
+        background: #fff;
     }

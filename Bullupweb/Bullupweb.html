@@ -28,7 +28,7 @@
         width: 100px;
         height: 100%;
         text-align: center;
-        display: none;
+        display: block;
       }
       .anchor ul{
         height: 100%;
@@ -69,14 +69,17 @@
       .roundabout_box {
         height: 400px;
         width: 1000px;
-        margin: 280px auto 20px;
+        display: block;
+        margin: 500px auto 20px;
 
       }
       .roundabout_box ul{
-         width: 100%;
+         width: 740px;
+         left: 50%;
+         transform: translateX(-50%);
       }
       .roundabout_box ul li{
-        width: 100%;
+        width:1000px !important;
       }
       .roundabout_box ul li img{
         width: 100%;
@@ -118,6 +121,16 @@
             <li><a href="javascript:;"><img src="./image/lunbo4.png" alt=""><span class="text"></span></a></li>
             <li><a href="javascript:;"><img src="./image/lunbo5.png" alt=""><span class="text"></span></a></li>
         </ul>
+      </div>
+      <div class="box" id="box-id">
+          <ul class="image" id="img-id">
+              <li><a href="#"><img src="./image/lunbo1.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo2.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo3.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo4.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo5.png" alt=""></a></li>
+          </ul>
+          <div class="point" id="point-id"></div>
       </div>
      </div>
 
@@ -305,7 +318,7 @@
     <script src="./js/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-                $('.roundabout_box ul').roundabout({
+                var roundabout_json = {
                     duration: 1000,
                     minScale: 0.6,
                     autoplay: true,
@@ -317,6 +330,49 @@
                     autoplayInitialDelay: 5000,
                     autoplayPauseOnHover: true,
                     enableDrag: true
+                };
+                $('.roundabout_box ul').roundabout(roundabout_json);
+                window.onresize = function(){
+                  //console.log("resize");
+                  console.log(window.innerWidth);
+                  if(window.innerWidth < 1000){};
+                }
+                var box = $("#box-id");
+                var images = $("#img-id");
+                var imgWidth = box.width();
+                var lis = images.children();
+                var point = $("#point-id");
+                for (var i = 0; i < lis.length; i++){
+                    $("<span>").appendTo(point);
+                }
+                var spans = point.children();
+                spans.eq(0).addClass("current");
+                var timer = null;
+                var ul_num = 0, span_num = 0;
+                for (var i = 0; i < spans.length; i++){
+                    spans.eq(i).on("click", i, function(event){
+                        $(this).addClass("current").siblings('span').removeClass("current");
+                        $(lis).eq(event.data).fadeIn().siblings('li').fadeOut(1000);
+                        ul_num = span_num = event.data ;
+                    });
+                }
+                timer = setInterval(play, 4000);
+                function play(){
+                    ul_num++;
+                    if (ul_num > spans.length - 1){
+                        ul_num = 0;
+                    }
+                    $(lis).eq(ul_num).fadeIn().siblings('li').fadeOut(1000);
+                    span_num++;
+                    if (span_num > spans.length - 1){
+                        span_num = 0;
+                    }
+                    spans.eq(span_num).addClass("current").siblings('span').removeClass("current");
+                }
+                box.hover(function(){
+                  clearInterval(timer);
+                }, function(){
+                    timer = setInterval(play, 4000);
                 });
             });
     </script>
