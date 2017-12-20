@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .roundabout_box {
+        height: 400px;
+        width: 500px;
+        margin: 280px auto 20px;
+
+      }
+      .roundabout_box ul{
+         width: 100%;
+      }
+      .roundabout_box ul li{
+        width: 100%;
+      }
+      .roundabout_box ul li img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="introduce" class="hey">
+        <div class="in exhibition_hall" style="padding-top:1px;height: 1300px;background: url(image/jianjie.png) 0 0 no-repeat; background-size:cover;">
+            <div id="" class="roundabout_box">
+              <ul>
+                  <li><a href="javascript:;"><img src="./image/lunbo1.png" alt=""><span class="text"></span></a></li>
+                  <li><a href="javascript:;"><img src="./image/lunbo2.png" alt=""><span class="text"></span></a></li>
+                  <li><a href="javascript:;"><img src="./image/lunbo3.png" alt=""><span class="text"></span></a></li>
+                  <li><a href="javascript:;"><img src="./image/lunbo4.png" alt=""><span class="text"></span></a></li>
+                  <li><a href="javascript:;"><img src="./image/lunbo5.png" alt=""><span class="text"></span></a></li>
+              </ul>
+    </div>
+    <div class="clear"></div>
+
+</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/jquery.roundabout.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+          $('.roundabout_box ul').roundabout({
+              duration: 1000,
+              minScale: 0.6,
+              autoplay: true,
+              autoplayDuration: 5000,
+              minOpacity: 0,
+              maxOpacity: 1,
+              reflect: true,
+              startingChild: 5,
+              autoplayInitialDelay: 5000,
+              autoplayPauseOnHover: true,
+              enableDrag: true
+          });
+      });
+</script>
+
+  </body>
+</html>

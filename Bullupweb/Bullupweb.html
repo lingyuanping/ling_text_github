@@ -66,6 +66,21 @@
       .anchor .action_one{
         color: #b49756;
       }
+      .roundabout_box {
+        height: 400px;
+        width: 1000px;
+        margin: 280px auto 20px;
+
+      }
+      .roundabout_box ul{
+         width: 100%;
+      }
+      .roundabout_box ul li{
+        width: 100%;
+      }
+      .roundabout_box ul li img{
+        width: 100%;
+      }
     </style>
 </head>
 <body>
@@ -94,7 +109,17 @@
     </div>
 
     <!-- 斗牛介绍 -->
-    <div class="bullup_secont"><div class="carousel"></div></div>
+    <div class="bullup_secont">
+      <div id="" class="roundabout_box">
+        <ul>
+            <li><a href="javascript:;"><img src="./image/lunbo1.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo2.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo3.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo4.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo5.png" alt=""><span class="text"></span></a></li>
+        </ul>
+      </div>
+     </div>
 
     <!-- 赏金联赛 -->
     <div class="bullup_liansai">
@@ -277,5 +302,23 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./Bullupweb.js"></script>
+    <script src="./js/jquery.roundabout.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+                $('.roundabout_box ul').roundabout({
+                    duration: 1000,
+                    minScale: 0.6,
+                    autoplay: true,
+                    autoplayDuration: 5000,
+                    minOpacity: 0,
+                    maxOpacity: 1,
+                    reflect: true,
+                    startingChild: 5,
+                    autoplayInitialDelay: 5000,
+                    autoplayPauseOnHover: true,
+                    enableDrag: true
+                });
+            });
+    </script>
 </body>
 </html>

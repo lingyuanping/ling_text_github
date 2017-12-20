@@ -153,6 +153,48 @@
           height: 30px;
          }
     }
+    @media all and (min-width:600px) and (max-width:650px){
+        div.bullup_news_right_box{
+          width: 100%;
+        }
+        div.bullup_news_right_bar{
+          margin: 300px auto 0;
+        }
+        div.bullup_news_center{
+          width: 440px;
+        }
+        div.bullup_news_list_box p{
+          width: 590px;
+        }
+    }
+
+    @media all and (max-width:600px){
+      div.bullup_news_right_box{
+        width: 100%;
+      }
+      div.bullup_news_right_bar{
+        width: 95%;
+        margin: 300px auto 0;
+      }
+      .bullup_news_list_box p.bullup_news_list{
+        margin: 8px 0 0 20px;
+        padding: 0px 10px 0 33px;
+        position: relative;
+        width: 95%;
+      }
+      span.bullup_news_new{
+        position: absolute;
+        top: 6px;
+        left: 0px;
+      }
+      span.bullup_news_center{
+        width: 85%;
+      }
+      div.bullup_news_list_box p{
+        width: 95%;
+      }
+    }
+
     @media all and (min-width:1000px) and (max-width:1200px){
        div.bullup_map_box{
          width: 1000px;
