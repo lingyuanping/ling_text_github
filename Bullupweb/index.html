@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        
+
+
+<!--This is Git Project From TIA/tia-gw-pc-20170425(5570)-->
+        <title>
+             斗牛电竞加载页
+        </title>
+        <meta name="from" content="git:TIA/tia-gw-pc-20170425">
+        <meta name="author" content="douniu，NetEase Inc.">
+        <meta name="copyright" content="douniu，NetEase Inc.">
+        <meta name="editor" content="panda33">
+        <meta name="designer" content="doudou,Kevin,wangyanzhe">
+        <meta name="front-end technicist" content="heyunying,huangchuan">
+        <meta name="pmid" content="21429">
+        <meta name="keywords" content="斗牛电竞">
+        <meta name="description" content="斗牛电竞">
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+        <meta name="baidu-site-verification" content="O7KPb45Fkw">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+        <style type="text/css">
+        body{
+            background: url(img/ladding.png) 0 0 no-repeat;
+            position: relative;
+            overflow-x: hidden;
+
+
+        }
+        .therm  span{
+            opacity: 0;
+        }
+        .jindu{
+            display: none;
+        }
+      
+        </style>
+    </head>
+
+    <body>
+        <div class="text-dn" style="margin:300px auto;text-align: center;min-width: 1024px;">
+        <div style="width: 786px;height: 225px;margin:0 auto;position: relative;">
+        <img src="img/text-lang.png"  style="">
+        <div style="position: absolute;top:-335px;left:160px;"><img src="img/huoyan-lang.png"  ></div>
+        <div style="position: absolute;top:200px;left:-575px;"><img src="img/huawen-lang.png"></div>
+         <div style="position: absolute;top:340px;left:392px;">
+            <div class="htmleaf-container" style="">
+                <div class="htmleaf-content bgcolor-3" style="width: 10px;">
+                        <div id="jqmeter-container"></div>
+                        <div id="jqmeter-container-vertical"></div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+         <img src="img/genggai.png" style="margin-top: 20px;" class="jindu">
+
+         </div>
+  <!--       <div style="position: absolute;top:225px;left:895px;"><img src="img/circle_e7ffbf0.png"></div> -->
+
+
+   
+    
+    </body>
+
+
+</html>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jqmeter.min.js"></script>
+<script type="text/javascript">
+//                            _ooOoo_  
+//                           o8888888o  
+//                           88" . "88  
+//                           (| -_- |)  
+//                            O\ = /O  
+//                        ____/`---'\____  
+//                      .   ' \\| |// `.  
+//                       / \\||| : |||// \  
+//                     / _||||| -:- |||||- \  
+//                       | | \\\ - /// | |  
+//                     | \_| ''\---/'' | |  
+//                      \ .-\__ `-` ___/-. /  
+//                   ___`. .' /--.--\ `. . __  
+//                ."" '< `.___\_<|>_/___.' >'"".  
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |  
+//                 \ \ `-. \_ __\ /__ _/ .-` / /  
+//         ======`-.____`-.___\_____/___.-`____.-'======  
+//                            `=---='  
+//  
+//         .............................................  
+//                  佛祖保佑             永无BUG 
+////进度条加载
+$(function(){
+            
+            $('#jqmeter-container-vertical').jQMeter({
+                goal:'$1,000',
+                raised:'$1,000',
+                orientation:'vertical',
+                width:'2px',
+                height:'280px',
+                barColor:'#ccc'
+            });
+        });
+//加载球
+$(document).ready(function(){
+     var startTime = new Date();
+         setTimeout(function () {
+         $(".jindu").fadeIn("slow");
+        (new Date() - startTime);
+
+    }, 2000)
+   
+
+  });
+//加载跳转
+var starte = new Date();
+ setTimeout(function () {
+         window.location.href="indexx.html";
+     }, 2500)
+  
+
+</script>

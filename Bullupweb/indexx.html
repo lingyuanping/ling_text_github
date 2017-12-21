@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="from" content="git:TIA/tia-gw-pc-20170425">
+    <meta name="author" content="douniu，NetEase Inc.">
+    <meta name="copyright" content="douniu，NetEase Inc.">
+    <meta name="editor" content="panda33">
+    <meta name="designer" content="doudou,Kevin,wangyanzhe">
+    <meta name="front-end technicist" content="heyunying,huangchuan">
+    <meta name="pmid" content="21429">
+    <meta name="keywords" content="斗牛电竞">
+    <meta name="description" content="斗牛电竞">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="Shortcut Icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel='stylesheet' href="./Bullupweb.css" type='text/css' />
+    <title>斗牛电竞</title>
+    <style media="screen">
+      .anchor{
+        font-size: 16px;
+        position: fixed;
+        z-index: 10;
+        right: 45px;
+        width: 100px;
+        height: 100%;
+        text-align: center;
+        display: block;
+      }
+      .anchor ul{
+        height: 100%;
+      }
+      .anchor ul li{
+         height: 10%;
+         /*padding: 0 50px 80px 0;*/
+         color: #8e8c89;
+         font-size: 14px;
+      }
+      .anchor ul li img{
+        width: 50px;
+        height: 50px;
+      }
+      .anchor .backtotop{
+        width: 80px;
+        height: 60px;
+        border: 1px solid #b49756;
+        border-radius: 10px;
+        position: absolute;
+        left: 10px;
+        bottom: 120px;
+        display: none;
+      }
+      .anchor .backtotop1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 10px;
+      }
+      .anchor .backtotop1 img{
+        width: 100px;
+        height: 100px;
+      }
+      .anchor .action_one{
+        color: #b49756;
+      }
+      .roundabout_box {
+        height: 400px;
+        width: 1000px;
+        display: block;
+        margin: 500px auto 20px;
+
+      }
+      .roundabout_box ul{
+         width: 740px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+      .roundabout_box ul li{
+        width:1000px !important;
+      }
+      .roundabout_box ul li img{
+        width: 100%;
+      }
+      .bullup_btn_baoming a{
+        text-decoration-line: none;
+        color: #b49756;
+      }
+    </style>
+</head>
+<body>
+  <div class="anchor">
+     <ul>
+       <li><span></span></li>
+       <li class="action_one"><span>官网首页</span></li>
+       <li>斗牛介绍</li>
+       <li>赏金联赛</li>
+       <li>新闻动态</li>
+       <li>公司发展</li>
+       <li class="backtotop"><img src="./image/fanhui.png" alt=""></li>
+       <li class="backtotop1"><img src="./image/erwekma.jpg" alt=""></li>
+     </ul>
+  </div>
+    <div class="bullup_top">
+        <div class="bullup_top_bar"></div>
+        <div class="bullup_bar"></div>
+        <div class="bullup_top_in"></div>
+        <div class="bullup_btn_baoming"><a download="" href="./11.rar" target="blank" class="btn_dl btn xz-click big-link"   id="downPdf">下载客户端</a></div>
+        <div class="bullup_btn_xiazai">赛事报名</div>
+        <div class="bullup_btn_bgmusic" id="bullup_bg_music">关闭背景音乐</div>
+        <audio autoplay  loop id="audio">
+          <source src="./music/Two Steps From Hell - Victory (Instrumental).mp3" type="">
+        </audio>
+    </div>
+
+    <!-- 斗牛介绍 -->
+    <div class="bullup_secont">
+      <div id="" class="roundabout_box">
+        <ul>
+            <li><a href="javascript:;"><img src="./image/lunbo1.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo2.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo3.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo4.png" alt=""><span class="text"></span></a></li>
+            <li><a href="javascript:;"><img src="./image/lunbo5.png" alt=""><span class="text"></span></a></li>
+        </ul>
+      </div>
+      <div class="box" id="box-id">
+          <ul class="image" id="img-id">
+              <li><a href="#"><img src="./image/lunbo1.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo2.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo3.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo4.png" alt=""></a></li>
+              <li><a href="#"><img src="./image/lunbo5.png" alt=""></a></li>
+          </ul>
+          <div class="point" id="point-id"></div>
+      </div>
+     </div>
+
+    <!-- 赏金联赛 -->
+    <div class="bullup_liansai">
+        <div class="bullup_liansai_top">
+           <ul class="bullup_liansai_bar">
+             <li id="btn1" class="current">比赛安排</li>
+             <li id="btn2">报名方式</li>
+             <li>赛事规则</li>
+             <li>排名规则</li>
+             <li>积分规则</li>
+             <li>比赛奖励</li>
+           </ul>
+        </div>
+        <div class="bullup_liansai_content">
+          <div class="bullup_liansai_content_box" id="move">
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left" >
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./image/anpai.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">比赛安排</p>
+                <p class="font_size">比赛时间：10/20~11/12，每个比赛日（每天）晚上18:00~22:00（美国西部时间）</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left">
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./img/baoming.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">报名方式</p>
+                <p class="font_size">参赛者通过微信推文下的报名链接，填写报名信息或首页点击赛事报名按钮填写对应信息</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left">
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./img/shuoming.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">赛事规则</p>
+                <p class="font_size">1.比赛方式：所有队伍通过斗牛电竞客户端，约战模式（系统匹配）进行5v5比赛。</p>
+                <p class="font_size">2.奖惩制度：双方每人支付5美元进入匹配，获胜方每人立刻赢得180%（9美元）奖金，战败方则失去5美元。若账户余额不足5美元，则需要进行充值，以达到比赛要求。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left">
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./img/paiming.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">排名规则</p>
+                <p class="font_size">1.每队的胜场数为队内每人胜场数的总和。（例：每人5场胜利，总场25场胜利）.</p>
+                <p class="font_size">2.当队伍少人（不够5人时），可以与其他人组队比赛，但胜场数属于本身的队伍。（例：A队3人和B对2人组队获胜一场比赛，则A队胜场+3，B队胜场+2）</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left">
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./img/jifen.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">积分规则</p>
+                <p class="font_size">1.每队的胜场数为队内每人胜场数的总和。（例：每人5场胜利，总场25场胜利）.</p>
+                <p class="font_size">2.当队伍少人（不够5人时），可以与其他人组队比赛，但胜场数属于本身的队伍。（例：A队3人和B对2人组队获胜一场比赛，则A队胜场+3，B队胜场+2）</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bullup_liansai_content_one">
+              <div class="bullup_liansai_content_left">
+                <div class="bullup_liansai_content_left_box">
+                  <img src="./img/jiangli.png" alt="">
+                </div>
+              </div>
+              <div class="bullup_liansai_content_right">
+                <div class="bullup_liansai_content_ok">
+                <p class="font_size_title">比赛奖励</p>
+                <p class="font_size">1.互动奖励：参与“北美电竞”公众号的互动活动，获得参赛报名奖励。共50支队伍，每队75刀。（每人15刀）</p>
+                <p class="font_size">2.每场比赛：胜利方将立即赢得奖金，金额为该场比赛报名费的180%e.g.上场比赛开始前小明支付了5美金进入匹配，获胜后小明将立即获得9美金的比赛奖金。</p>
+                <p class="font_size">3. 赛中奖励： 3.1 为了提高比赛气氛，主办方每两天将会奖励，两天内比赛场数(胜场+败场)最多的10支的队伍可获得额外奖金，每队50刀。 3.2 每周获胜场数最多三支队伍各获得等值于300美元的奖金，和赞助商奖品。 3.3 若获得每周前三的队伍是高校代表队（主播代表队），则高校学联/主播额外获得100刀现金奖励。</p>
+                <p class="font_size">4. 赛后奖励：截止到11/12日，美国西部时间22:00，根据比赛胜利场数，进行总排名。前3名的队伍根据排名，获得高额奖金和奖品。若获得前三的队伍是高校代表队（主播代表队），则高校学联/主播额外获得500/300/200刀奖励</p>
+                <p class="font_size">5. 特殊奖励:5.1 高校奖励：由于比赛设有高校榜，高校代表队如果在高校胜场排行榜排名前三，斗牛电竞会通过“北美电竞”公众号，免费为高校学生会或其赞助商家的制作一篇推文宣传。 （推文内容需经过斗牛电竞审核，最大程度上尊重学联要求） 5.2 主播奖励：由于比赛设有主播榜，主播代表队如果在主播胜场排行榜排名前三，斗牛电竞会通过“北美电竞”公众号，免费为主播做一片采访或宣传的推文。 （推文内容需经过斗牛电竞审核，最大程度上尊重主播需求）</p>
+                <p class="font_size">备注： 1.	所有奖金（奖励给高校和主播之外）都是直接存入游戏账户内。奖励给高校和主播的奖金，会以现金或者转账形式。 2.	每周至少进行10局比赛才可以进行提现，提现后三至七天将获得转账。 3.	关注“北美电竞”公众号，参与活动并获得奖励。</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- 新闻综合 -->
+    <div class="bullup_liansai">
+      <div class="bullup_news">
+        <div class="bullup_news_left">
+          <img src="./image/time2.jpg" />
+
+        </div>
+        <div class="bullup_news_right">
+            <div class="bullup_news_right_box">
+              <div class="bullup_news_right_bar">
+                <ul>
+                  <li>综合</li>
+                  <li>新闻</li>
+                  <li>公告</li>
+                  <li>媒体</li>
+                  <li>社交</li>
+                </ul>
+              </div>
+              <div class="bullup_news_list_box">
+                <p>电竞纳入金球奖 对于电竞和足球到底意味着什么？</p>
+                <p class="bullup_news_list">
+                  <span class="bullup_news_new">最新</span>
+                  <span class="bullup_news_center">< Bullup ● 平台 ></span>
+                  <span class="bullup_news_time">09-29</span>
+                </p>
+                <p class="bullup_news_list">
+                  <span class="bullup_news_new">最新</span>
+                  <span class="bullup_news_center"> NACG北美电竞联赛丨荣耀之名，王者之战，等你点燃事</span>
+                  <span class="bullup_news_time">09-29</span>
+                </p>
+                <p class="bullup_news_list">
+                  <span class="bullup_news_new">最新</span>
+                  <span class="bullup_news_center">- Hello · 女神 - 让你与网红主播零距离对话</span>
+                  <span class="bullup_news_time">09-29</span>
+                </p>
+                <p class="bullup_news_list">
+                  <span class="bullup_news_new">最新</span>
+                  <span class="bullup_news_center">约吗？</span>
+                  <span class="bullup_news_time">09-29</span>
+                </p>
+                <p class="bullup_news_list">
+                  <span class="bullup_news_new">最新</span>
+                  <span class="bullup_news_center">“晚点睡没事儿，反正又不会死”</span>
+                  <span class="bullup_news_time">09-29</span>
+                </p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 公司 -->
+    <div class="bullup-map">
+      <div class="bullup_map_box">
+        <img src="./image/M7aUkuS.png">
+        <div class="bullup_map_canada">
+          <p class="bullup_map_canada_content">CANADA</p>
+          <p class="bullup_map_canada_content_chinese">加拿大</p>
+        </div>
+        <div class="bullup_map_america">
+          <p class="bullup_map_america_content">AMERICA</p>
+          <p class="bullup_map_america_content_chinese">美国</p>
+        </div>
+        <div class="bullup_map_china">
+          <p class="bullup_map_china_content">CHINA</p>
+          <p class="bullup_map_china_content_chinese">中国</p>
+        </div>
+      </div>
+      <div class="footer_ied">
+        <div class="footer_ied_heng">
+        </div>
+        <p>斗牛电竞 | 服务条款 | 京ICP备17058966号 广告服务 | 商务合作 | 网站导航</p>
+        <p>联系我们：support@bullesport.com</p>
+        <p>斗牛电竞 版权所有</p>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./Bullupweb.js"></script>
+    <script src="./js/jquery.roundabout.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+                var roundabout_json = {
+                    duration: 1000,
+                    minScale: 0.6,
+                    autoplay: true,
+                    autoplayDuration: 5000,
+                    minOpacity: 0,
+                    maxOpacity: 1,
+                    reflect: true,
+                    startingChild: 5,
+                    autoplayInitialDelay: 5000,
+                    autoplayPauseOnHover: true,
+                    enableDrag: true
+                };
+                $('.roundabout_box ul').roundabout(roundabout_json);
+                window.onresize = function(){
+                  //console.log("resize");
+                  console.log(window.innerWidth);
+                  if(window.innerWidth < 1000){};
+                }
+                var box = $("#box-id");
+                var images = $("#img-id");
+                var imgWidth = box.width();
+                var lis = images.children();
+                var point = $("#point-id");
+                for (var i = 0; i < lis.length; i++){
+                    $("<span>").appendTo(point);
+                }
+                var spans = point.children();
+                spans.eq(0).addClass("current");
+                var timer = null;
+                var ul_num = 0, span_num = 0;
+                for (var i = 0; i < spans.length; i++){
+                    spans.eq(i).on("click", i, function(event){
+                        $(this).addClass("current").siblings('span').removeClass("current");
+                        $(lis).eq(event.data).fadeIn().siblings('li').fadeOut(1000);
+                        ul_num = span_num = event.data ;
+                    });
+                }
+                timer = setInterval(play, 4000);
+                function play(){
+                    ul_num++;
+                    if (ul_num > spans.length - 1){
+                        ul_num = 0;
+                    }
+                    $(lis).eq(ul_num).fadeIn().siblings('li').fadeOut(1000);
+                    span_num++;
+                    if (span_num > spans.length - 1){
+                        span_num = 0;
+                    }
+                    spans.eq(span_num).addClass("current").siblings('span').removeClass("current");
+                }
+                box.hover(function(){
+                  clearInterval(timer);
+                }, function(){
+                    timer = setInterval(play, 4000);
+                });
+            });
+    </script>
+</body>
+</html>
