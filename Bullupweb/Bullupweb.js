@@ -112,18 +112,55 @@ function move11(target){
         $(this).text("关闭背景音乐");
       }
   });
-
+  
+  var canada_timer = null;
+  var america_timer = null;
+  var china_timer = null;
   $(".bullup_map_canada").on("click",function(event){
     event.preventDefault();
     event.stopPropagation();
     $(this).css({width: "240px",height: "240px","z-index":"2"});
-    setTimeout(function(){
+    canada_timer = setTimeout(function(){
       $(".bullup_map_canada_content_chinese").show();
       $(".bullup_map_canada_content").show();
-    },1000);
+    },300);
+  });
+  $(".bullup_map_america").on("click",function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).css({width: "240px",height: "240px","z-index":"2"});
+    america_timer = setTimeout(function(){
+      $(".bullup_map_america_content_chinese").show();
+      $(".bullup_map_america_content").show();
+    },300);
+  });
+  $(".bullup_map_china").on("click",function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).css({width: "240px",height: "240px","z-index":"2"});
+    china_timer = setTimeout(function(){
+      $(".bullup_map_china_content_chinese").show();
+      $(".bullup_map_china_content").show();
+    },300);
   });
   $(document).on("click",function(){
-    $(".bullup_map_canada").css({width:"40px",height:"40px"});
+    if(canada_timer != null ){
+      window.clearTimeout(canada_timer);
+    };
+    if(america_timer != null ){
+      window.clearTimeout(america_timer);
+    };
+    if(china_timer != null ){
+      window.clearTimeout(china_timer);
+    };
+
+    $(".bullup_map_china_content_chinese").css({display:"none"});
+    $(".bullup_map_china_content").css({display:"none"});
+    $(".bullup_map_america_content_chinese").css({display:"none"});
+    $(".bullup_map_america_content").css({display:"none"});
     $(".bullup_map_canada_content_chinese").css({display:"none"});
     $(".bullup_map_canada_content").css({display:"none"});
+    $(".bullup_map_canada").css({width:"40px",height:"40px","z-index":"1",});
+    $(".bullup_map_america").css({width:"40px",height:"40px","z-index":"1",});
+    $(".bullup_map_china").css({width:"40px",height:"40px","z-index":"1",});
   });

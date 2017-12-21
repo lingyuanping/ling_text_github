@@ -44,6 +44,9 @@
             width: 750px;
             height: 400px;
         }
+        div.anchor{
+             display: none;
+        }
         .bullup_liansai_top .bullup_liansai_bar li{
             width: 120px;
         }
@@ -91,6 +94,9 @@
           }
     }
     @media all and (max-width:750px){
+        div.anchor{
+            display: none;
+       }
         div.roundabout_box{
             display: none;
           }
@@ -526,7 +532,7 @@
       top: 22.34%;
       left:11.66%;
       transform: translate(-50%,-50%);
-      transition: all 1s linear;
+      transition: all 0.3s linear;
       background: rgba(26, 26, 26, 0.85);
     }
     .bullup_map_america{
@@ -541,7 +547,7 @@
       margin: 0px;
       background: rgba(26, 26, 26, 0.85);
       transform: translate(-50%,-50%);
-      transition: all 1s linear;
+      transition: all 0.3s linear;
     }
     /* .bullup_map_america:hover,.bullup_map_china:hover,.bullup_map_canada:hover{
         width: 240px;
@@ -556,7 +562,7 @@
       top: 26%;
       left:80%;
       transform: translate(-50%,-50%);
-      transition: all 1s linear;
+      transition: all 0.3s linear;
       background: rgba(26, 26, 26, 0.85);
     }
     .footer_ied{
@@ -636,7 +642,7 @@
        font-size: 24pt;
        display: none;
     }
-     .bullup_map_canada_content_chinese,.bullup_map_america_content_chinese.bullup_map_china_content_chinese{
+     .bullup_map_canada_content_chinese,.bullup_map_america_content_chinese,.bullup_map_china_content_chinese{
       position: relative;
       top: 30%;
       margin-bottom: 20px;
