@@ -112,3 +112,18 @@ function move11(target){
         $(this).text("关闭背景音乐");
       }
   });
+
+  $(".bullup_map_canada").on("click",function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).css({width: "240px",height: "240px","z-index":"2"});
+    setTimeout(function(){
+      $(".bullup_map_canada_content_chinese").show();
+      $(".bullup_map_canada_content").show();
+    },1000);
+  });
+  $(document).on("click",function(){
+    $(".bullup_map_canada").css({width:"40px",height:"40px"});
+    $(".bullup_map_canada_content_chinese").css({display:"none"});
+    $(".bullup_map_canada_content").css({display:"none"});
+  });

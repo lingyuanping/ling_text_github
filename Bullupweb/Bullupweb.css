@@ -168,7 +168,7 @@
              width: 650px;
              left:50%;
              transform: translate(-50%,0);
-         }
+         }:hover
          div.bullup_news{
              width: 100%
          }
@@ -543,10 +543,10 @@
       transform: translate(-50%,-50%);
       transition: all 1s linear;
     }
-    .bullup_map_america:hover,.bullup_map_china:hover,.bullup_map_canada:hover{
+    /* .bullup_map_america:hover,.bullup_map_china:hover,.bullup_map_canada:hover{
         width: 240px;
         height: 240px;
-    }
+    } */
     .bullup_map_china{
       width: 40px;
       height: 40px;
@@ -624,3 +624,24 @@
     .point span.current {
         background: #fff;
     }
+    .bullup_map_canada_content,.bullup_map_america_content,.bullup_map_china_content{
+       position: relative;
+       top: 35%;
+       text-align: center;
+       margin-bottom: 20px;
+       text-transform: uppercase;
+       font-family: "Roboto Condensed", Helvetica, sans-serif;
+       font-weight: 300;
+       color: #fff;
+       font-size: 24pt;
+       display: none;
+    }
+     .bullup_map_canada_content_chinese,.bullup_map_america_content_chinese.bullup_map_china_content_chinese{
+      position: relative;
+      top: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      display: none;
+     }
