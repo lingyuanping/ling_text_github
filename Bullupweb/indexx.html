@@ -20,6 +20,10 @@
     <link rel='stylesheet' href="./Bullupweb.css" type='text/css' />
     <title>斗牛电竞</title>
     <style media="screen">
+      a{
+        text-decoration: none;
+        color: #d6b247;  
+      }
       .anchor{
         font-size: 16px;
         position: fixed;
@@ -94,7 +98,7 @@
   <div class="anchor">
      <ul>
        <li><span></span></li>
-       <li class="action_one"><span>官网首页</span></li>
+       <li class="action_one"><span><a href="http://www.bullesport.com">官网首页</a></span></li>
        <li>斗牛介绍</li>
        <li>赏金联赛</li>
        <li>新闻动态</li>
@@ -107,8 +111,8 @@
         <div class="bullup_top_bar"></div>
         <div class="bullup_bar"></div>
         <div class="bullup_top_in"></div>
-        <div class="bullup_btn_baoming"><a download="" href="./11.rar" target="blank" class="btn_dl btn xz-click big-link"   id="downPdf">下载客户端</a></div>
-        <div class="bullup_btn_xiazai">赛事报名</div>
+        <div class="bullup_btn_xiazai"><a download="" href="./11.rar" target="blank" class="btn_dl btn xz-click big-link"   id="downPdf">下载客户端</a></div>
+        <div class="bullup_btn_baoming"><a download="" href="./22" target="blank" class="btn_dl btn xz-click big-link"   id="downPdf">备用通道下载</a></div>
         <div class="bullup_btn_bgmusic" id="bullup_bg_music">关闭背景音乐</div>
         <audio autoplay  loop id="audio">
           <source src="./music/Two Steps From Hell - Victory (Instrumental).mp3" type="">
@@ -271,27 +275,37 @@
                 <p>电竞纳入金球奖 对于电竞和足球到底意味着什么？</p>
                 <p class="bullup_news_list">
                   <span class="bullup_news_new">最新</span>
+                  <a href="https://mp.weixin.qq.com/s/IDTudYjnpseUKDRjwthxkQ" style="color:#e0b07d">
                   <span class="bullup_news_center">< Bullup ● 平台 ></span>
+                  </a>
                   <span class="bullup_news_time">09-29</span>
                 </p>
                 <p class="bullup_news_list">
                   <span class="bullup_news_new">最新</span>
-                  <span class="bullup_news_center"> NACG北美电竞联赛丨荣耀之名，王者之战，等你点燃事</span>
-                  <span class="bullup_news_time">09-29</span>
+                  <a href="https://mp.weixin.qq.com/s/fRBngMUeIFAjO6bq5UUHRA" style="color:#e0b07d">
+                  <span class="bullup_news_center" >英雄联盟ALL STAR in LA，谁才是你心中的Solo King？</span>
+                  </a>
+                  <span class="bullup_news_time">11-30</span>
                 </p>
                 <p class="bullup_news_list">
                   <span class="bullup_news_new">最新</span>
+                  <a href="https://mp.weixin.qq.com/s/BVGhID5pv1oJZGM5fJ2vTQ" style="color:#e0b07d">
                   <span class="bullup_news_center">- Hello · 女神 - 让你与网红主播零距离对话</span>
+                  </a>
                   <span class="bullup_news_time">09-29</span>
                 </p>
                 <p class="bullup_news_list">
                   <span class="bullup_news_new">最新</span>
+                  <a href="https://mp.weixin.qq.com/s/HxU5lahzhaU-etoOrMiXEg" style="color:#e0b07d">
                   <span class="bullup_news_center">约吗？</span>
+                  </a>
                   <span class="bullup_news_time">09-29</span>
                 </p>
                 <p class="bullup_news_list">
                   <span class="bullup_news_new">最新</span>
+                  <a href="https://mp.weixin.qq.com/s/2KhZ5W1Kc_4MwumQeVBZzg" style="color:#e0b07d">
                   <span class="bullup_news_center">“晚点睡没事儿，反正又不会死”</span>
+                  </a>
                   <span class="bullup_news_time">09-29</span>
                 </p>
               </div>
@@ -322,11 +336,15 @@
         <div class="footer_ied_heng">
         </div>
         <p>斗牛电竞 | 服务条款 | 京ICP备17058966号 广告服务 | 商务合作 | 网站导航</p>
-        <p>联系我们：support@bullesport.com</p>
+        <p>联系我们：QQ群516029781 邮箱:support@bullesport.com</p>
         <p>斗牛电竞 版权所有</p>
       </div>
     </div>
+    <div class="layer">
+      <div class="layer_content"><p>程序猿正在玩命开发中┌(￣◇￣)┘</p><button class="closs_layer">关闭</button></div>
+    </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script> 
     <script type="text/javascript" src="./Bullupweb.js"></script>
     <script src="./js/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
@@ -347,7 +365,7 @@
                 $('.roundabout_box ul').roundabout(roundabout_json);
                 window.onresize = function(){
                   //console.log("resize");
-                  console.log(window.innerWidth);
+                  //console.log(window.innerWidth);
                   if(window.innerWidth < 1000){};
                 }
                 var box = $("#box-id");
@@ -387,6 +405,18 @@
                 }, function(){
                     timer = setInterval(play, 4000);
                 });
+                // $(".bullup_btn_xiazai").on("click",function(event){
+                //    $(".layer").show();
+                // });
+                // $(".layer").on("click",function(event){
+                //    $(".layer").hide();
+                // });
+                // $(".layer_content").on("click",function(event){
+                //   event.stopPropagation();
+                // });
+                // $(".closs_layer").on("click",function(event){
+                //   $('.layer').hide();
+                // });
             });
     </script>
 </body>
