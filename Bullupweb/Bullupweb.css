@@ -1,0 +1,690 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing:border-box;
+    }
+    ul{
+      list-style: none;
+    }
+    .bullup_top{
+        height:1000px;
+        width: 100%;
+        background: url("./image/index.png");
+        background-size: cover;
+        position: relative;
+    }
+    .bullup_top_in{
+        width:1000px;
+        height:500px;
+        background: url("./image/tatale.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+    .bullup_top_bar{
+        width: 326px;
+        height: 43px;
+        position:relative;
+        top:30px;
+        left:40px;
+        background: url("./image/douniu.png");
+        background-size: cover;
+    }
+    .bullup_bar{
+        width: 96%;
+        height: 4px;
+        background: #b49756;
+        opacity: 0.3;
+        border-radius: 1px;
+        margin: 50px 2% 20px 2%;
+    }
+    @media all and (min-width:750px) and (max-width:1000px){
+        .bullup_top_in{
+            width: 750px;
+            height: 400px;
+        }
+        div.anchor{
+             display: none;
+        }
+        .bullup_liansai_top .bullup_liansai_bar li{
+            width: 120px;
+        }
+        div.bullup_liansai_content_left_box{
+            left: 60px;
+        }
+        div.bullup_liansai_content_ok{
+            left: -55px;
+        }
+        div.bullup_liansai_content{
+            width: 750px;
+        }
+        p.font_size{
+            padding-right: 275px;
+        }
+        div.bullup_map_box img{
+
+        }
+        div.bullup_map_box{
+          width: 100%;
+          height: 400px;
+        }
+        div.bullup_news_left{
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            opacity: 0.4;
+        }
+        div.bullup_news_right{
+             width: 100%;
+        }
+        div.bullup_news_right_box{
+            width: 650px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+        div.bullup_news{
+            width: 100%
+        }
+        div.roundabout_box{
+            display: none;
+          }
+          div.box {
+              display:block;
+          }
+    }
+    @media all and (max-width:750px){
+        div.anchor{
+            display: none;
+       }
+        div.roundabout_box{
+            display: none;
+          }
+          div.box {
+              display:block;
+          }
+        .bullup_top_in{
+            width: 100%;
+            height: 400px;
+            background-size: contain;
+        }
+        div.bullup_btn_bgmusic{
+            top: 115px;
+            left: 15px;
+        }
+        div.bullup_btn_xiazai{
+            width: 150px;
+            top: 450px;
+        }
+        div.bullup_btn_baoming{
+            width: 150px;
+            top: 450px;
+        }
+        div.box{
+            height: 350px;
+        }
+        ul.image li a img{
+            height: 350px;
+        }
+        div.bullup_liansai_top{
+            width: 20%;
+            height: 100%;
+            margin-top: 64px;
+            border-bottom: 0px solid #B49756;
+            text-align: left;
+            position: absolute;
+            left: 10px;
+            z-index: 1;
+        }
+        .bullup_liansai_bar{
+            width: 100%;
+        }
+        ul.bullup_liansai_bar li{
+            width: 100%
+        }
+        div.bullup_liansai_content{
+            width: 100%;
+        }
+        div.bullup_liansai_content_box{
+            width: 600%;
+        }
+        div.bullup_liansai_content_one{
+            width: 16.6%;
+        }
+        div.bullup_liansai_content_left{
+            display:none;
+        }
+        div.bullup_liansai_content_right{
+            width: 80%;
+            left:22%;
+        }
+        .bullup_liansai_content_ok .font_size{
+         padding: 10px 10px 10px 15px;
+     }
+         div.bullup_news_left{
+             width: 80%;
+             position: absolute;
+             left: 10%;
+             opacity: 0.4;
+         }
+         div.bullup_news_right{
+              width: 100%;
+         }
+         div.bullup_news_right_box{
+             width: 650px;
+             left:50%;
+             transform: translate(-50%,0);
+         }:hover
+         div.bullup_news{
+             width: 100%
+         }
+         .bullup-map{
+
+         }
+         div.bullup_map_box{
+           width: 100%;
+           height: 350px;
+         }
+         div.bullup_map_china,div.bullup_map_canada,div.bullup_map_america{
+          width: 30px;
+          height: 30px;
+         }
+    }
+    @media all and (min-width:600px) and (max-width:650px){
+        div.bullup_news_right_box{
+          width: 100%;
+        }
+        div.bullup_news_right_bar{
+          margin: 300px auto 0;
+        }
+        div.bullup_news_center{
+          width: 440px;
+        }
+        div.bullup_news_list_box p{
+          width: 590px;
+        }
+    }
+
+    @media all and (max-width:600px){
+      div.bullup_news_right_box{
+        width: 100%;
+      }
+      div.bullup_news_right_bar{
+        width: 95%;
+        margin: 300px auto 0;
+      }
+      .bullup_news_list_box p.bullup_news_list{
+        margin: 8px 0 0 20px;
+        padding: 0px 10px 0 33px;
+        position: relative;
+        width: 95%;
+      }
+      span.bullup_news_new{
+        position: absolute;
+        top: 6px;
+        left: 0px;
+      }
+      span.bullup_news_center{
+        width: 85%;
+      }
+      div.bullup_news_list_box p{
+        width: 95%;
+      }
+    }
+
+    @media all and (min-width:1000px) and (max-width:1200px){
+        div.roundabout_box{
+          display: block;
+        }
+        div.box {
+            display:none;
+        }
+       div.bullup_map_box{
+         width: 1000px;
+       }
+       div.bullup_news{
+        width: 1000px;
+       }
+       div.bullup_news_left{
+           width: 35%;
+       }
+       div.bullup_news_right{
+           width: 65%;
+       }
+    }
+    .bullup_btn_baoming{
+        width: 170px;
+        height: 50px;
+        border: 1px solid #b49756;
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        transform: translate(20%,0);
+        box-shadow: 2px 2px 50px 4px #b49756;
+        line-height: 50px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+
+    }
+    .bullup_btn_xiazai{
+        width: 170px;
+        height: 50px;
+        border: 1px solid #b49756;
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        box-shadow: 2px 2px 50px 4px #b49756;
+        transform: translate(-120%,0);
+        line-height: 50px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+    }
+    .bullup_btn_bgmusic{
+        width: 130px;
+        height: 30px;
+        border: 1px solid #b49756;
+        font-size: 14px;
+        position: absolute;
+        top: 140px;
+        left: 120px;
+        box-shadow: 2px 2px 50px 4px #b49756;
+        line-height: 30px;
+        text-align: center;
+        color:#b49756;
+        border-radius: 10px;
+    }
+    .bullup_secont{
+        padding: 1px 0 0 0 ;
+        width: 100%;
+        height: 1300px;
+        background: url("./image/jianjie.png");
+        background-size: cover;
+        overflow: hidden;
+    }
+    .carousel{
+        margin: 200px 0 200px 0;
+        height: 800px;
+        width:100%;
+        background: url("./image/lunbo1.png");
+    }
+    .bullup_liansai{
+        width: 100%;
+        height: 1000px;
+        padding-top:1px;
+        background: url("./image/beijing.png");
+        background-size:cover;
+    }
+    .bullup_liansai_top{
+        width: 100%;
+        height: 50px;
+        margin-top:100px;
+        border-bottom: 1px solid #B49756;
+        text-align: center;
+    }
+    .bullup_liansai_bar{
+        color: #B49756;
+        height: 50px;
+        display: inline-block;
+    }
+    .bullup_liansai_bar li{
+        float: left;
+        line-height:48px;
+        border: 1px solid #b49756;
+        width: 164px;
+        text-align: center;
+    }
+    .bullup_liansai_content{
+        width: 1000px;
+        /*display: inline-block;*/
+        /*background: red;*/
+        height: 1140px;
+        margin: auto;
+        font-size: 0px;
+        position: relative;
+        overflow: hidden;
+    }
+    .bullup_liansai_content_box{
+        width: 6000px;
+        height: 200px;
+        /*background: green;*/
+        position: relative;
+        top:0px;
+        left: 0px;
+    }
+    .bullup_liansai_content_one{
+        width: 1000px;
+        height: 200px;
+        /*background: gray;*/
+        display: inline-block;
+    }
+    .bullup_liansai_content_left{
+        font-size: 0px;
+        width:250px;
+        height: 200px;
+        display: inline-block;
+        /*background: pink;*/
+        position:relative;
+    }
+    .bullup_liansai_content_right{
+        width: 750px;
+        height: 200px;
+        display: inline-block;
+        /*background: yellow;*/
+        position: relative;
+    }
+
+    .bullup_liansai_content_ok{
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        left:0;
+    }
+    .font_size_title{
+        padding: 10px 20px 0px 15px;
+        font-weight: 900;
+        color: #fff;
+        font-size: 30px;
+    }
+    .font_size{
+        font-size: 16px;
+        color: #fff;
+        padding: 10px 195px 10px 15px;
+         /*display: inline-block;*/
+        position: relative;
+        top: 0;
+        left:0;
+    }
+    .bullup_liansai_content_left_box{
+        position: absolute;
+        top: 50px;
+        left: 105px;
+    }
+    .current{
+      background: #fff;
+      color: #B49756;
+    }
+    .bullup_news{
+      width: 1200px;
+      height: 80%;
+      margin: 50px auto 0px;
+      /*background: red;*/
+      font-size: 0px;
+      position: relative;
+      /*opacity: 0.5;*/
+    }
+    .bullup_news_left{
+      width: 40%;
+      height: 100%;
+      padding-top: 100px;
+      /*background: gray;*/
+      /*opacity: 0.5;*/
+      display: inline-block;
+    }
+    .bullup_news_left img{
+      width: 100%;
+      height: 100%;
+      display:inline-block;
+    }
+    .bullup_news_right{
+      width: 60%;
+      height: 100%;
+      display: inline-block;
+      position: relative;
+    }
+    .bullup_news_right_box{
+      width: 100%;
+      height: 100%;
+      /*background: pink;*/
+      position: absolute;
+      top:0px;
+      left: 0px;
+    }
+    .bullup_news_right_bar{
+      width: 600px;
+      height: 45px;
+      padding-top: 1px;
+      margin: 300px 0 0 20px;
+      background: url("./image/23123.png");
+      /*background-size: cover;*/
+    }
+    .bullup_news_right_bar ul{
+        width: 98%;
+        height: 80%;
+        margin: 5px 0 0 6px;
+        /*background: red;*/
+        list-style: none;
+    }
+    .bullup_news_right_bar ul li{
+      font-size: 16px;
+      float: left;
+      width: 20%;
+      height: 100%;
+      background: url("./image/btn_tab_602d6d2.png") no-repeat;
+      /*background-size: cover;*/
+      text-align: center;
+      line-height: 39.19px;
+    }
+    .bullup_news_right_bar ul li:hover{
+      background: url("./image/btn_tab_h_7455da4.png");
+    }
+    .bullup_news_list_box{
+       font-size: 16px;
+       color: #e0b07d;
+       text-align: center;
+    }
+    .bullup_news_list_box p{
+      margin: 30px 0 0 10px;
+      font-weight: 900;
+      font-size: 20px;
+      width: 600px;
+    }
+    p.bullup_news_list{
+      margin: 8px 0 0 10px;
+      padding:0 10px 0 35px;
+      /*background: lightgray;*/
+      text-align: left;
+    }
+    .bullup_news_list span{
+      font-size: 14px;
+      font-weight: 200;
+    }
+    .bullup_news_new{
+      background: #A69990;
+      color: #211403;
+      display: inline-block;
+      width: 38px;
+      text-align: center;
+    }
+    .bullup_news_center{
+      display:inline-block;
+      padding-left: 10px;
+      width: 450px;
+      /*background: red;*/
+    }
+    .bullup_news_time{
+      color:#fff;
+    }
+    .bullup-map{
+       width: 100%;
+       height: 1000px;
+       background: #000;
+       padding-top: 1px;
+       position:relative;
+    }
+    .bullup_map_box{
+       width: 1200px;
+       margin: 80px auto 0;
+       height: 537px;
+       position: relative;
+    }
+    .bullup_map_box img{
+      width: 100%;
+      height: 100%;
+    }
+    .bullup_map_canada{
+      width: 40px;
+      height: 40px;
+      border: 6px solid #d6b247;
+      border-radius: 20px;
+      position: absolute;
+      top: 22.34%;
+      left:11.66%;
+      transform: translate(-50%,-50%);
+      transition: all 0.3s linear;
+      background: rgba(26, 26, 26, 0.85);
+    }
+    .bullup_map_america{
+      width: 40px;
+      height: 40px;
+      border: 5px solid #d6b247;
+      border-radius: 20px;
+      position: absolute;
+      top: 33.5%;
+      left:18.33%;
+      padding: 0px;
+      margin: 0px;
+      background: rgba(26, 26, 26, 0.85);
+      transform: translate(-50%,-50%);
+      transition: all 0.3s linear;
+    }
+    /* .bullup_map_america:hover,.bullup_map_china:hover,.bullup_map_canada:hover{
+        width: 240px;
+        height: 240px;
+    } */
+    .bullup_map_china{
+      width: 40px;
+      height: 40px;
+      border: 6px solid #d6b247;
+      border-radius: 20px;
+      position: absolute;
+      top: 26%;
+      left:80%;
+      transform: translate(-50%,-50%);
+      transition: all 0.3s linear;
+      background: rgba(26, 26, 26, 0.85);
+    }
+    .footer_ied{
+      height: 80px;
+      width: 100%;
+      margin-bottom: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      text-align: center;
+    }
+    .footer_ied_heng{
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      margin-bottom: 15px;
+    }
+    .footer_ied p{
+      font-size: 14px;
+      color:#b49756;
+    }
+    .box {
+        display:none;
+        width: 100%;
+        height: 460px;
+        margin: 200px auto;
+        overflow: hidden;
+        position: relative;
+    }
+    ul {
+        list-style: none;
+    }
+    .image {
+        height: 460px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .image li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .image li a img{
+        width: 100%;
+        height: 100%;
+    }
+    .point {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    .point span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        background: gray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .point span.current {
+        background: #fff;
+    }
+    .bullup_map_canada_content,.bullup_map_america_content,.bullup_map_china_content{
+       position: relative;
+       top: 35%;
+       text-align: center;
+       margin-bottom: 20px;
+       text-transform: uppercase;
+       font-family: "Roboto Condensed", Helvetica, sans-serif;
+       font-weight: 300;
+       color: #fff;
+       font-size: 24pt;
+       display: none;
+    }
+     .bullup_map_canada_content_chinese,.bullup_map_america_content_chinese,.bullup_map_china_content_chinese{
+      position: relative;
+      top: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      display: none;
+     }
+     .layer{
+        width: 100%;
+        height: 100%;
+        color: #000;
+        background: rgba(0,0,0,0.3);
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        display: none;
+    }
+    .layer_content{
+       position: absolute;
+       top: 20%;
+       left: 50%;
+       width: 60%;
+       height: 200px;
+       background: #fff;
+       transform: translate(-50%,-50%);
+       text-align: center;
+       line-height: 200px;
+       font-size: 30px;
+       color: #d6b247;
+       border-radius: 20px;
+    }
+    .closs_layer{
+      width: 100px;
+      height: 30px;
+      background: #d6b247;
+      position: absolute;
+      bottom: 12px;
+      right: 20px;
+      border: none;
+      border-radius: 6px;
+    }
+    .layer_content p{
+      word-wrap: break-word;
+    }
